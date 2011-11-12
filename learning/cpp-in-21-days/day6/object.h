@@ -1,5 +1,3 @@
-#include <iostream>
-
 class Object
 {
  public:
@@ -9,18 +7,4 @@ class Object
  private:
   int id;
 };
-
-Object::Object(int arg_id){
-  id = arg_id;
-  #ifdef DEBUG
-	std::cout << "[DBG] OBJ:INIT_"<< id << std::endl;
-  #endif
-}
-
-Object::~Object(){
-}
-
-int Object::get_id() const{
-  return id;
-}
 
